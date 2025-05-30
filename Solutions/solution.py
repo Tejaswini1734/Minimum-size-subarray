@@ -1,6 +1,5 @@
 # solution.py
 import math
-
 def min_sub_array_len(target, nums):
     n = len(nums)
     min_len = math.inf
