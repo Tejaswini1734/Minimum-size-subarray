@@ -1,5 +1,4 @@
 // Solution/solution.cpp
-
 #include <vector>
 #include <climits>
 #include <iostream>
