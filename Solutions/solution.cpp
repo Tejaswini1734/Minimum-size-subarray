@@ -2,7 +2,6 @@
 #include <vector>
 #include <climits>
 #include <iostream>
-
 class Solution {
 public:
     int minSubArrayLen(int target, std::vector<int>& nums) {
