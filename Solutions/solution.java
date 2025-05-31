@@ -1,4 +1,4 @@
-public class solution {
+public class Solution {
 
     
     public int minSubArrayLen(int target, int[] nums) {

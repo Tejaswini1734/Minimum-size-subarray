@@ -1,6 +1,6 @@
-public class test {
+public class Test {
     public static void main(String[] args) {
-        solution solution = new solution();
+       Solution solution = new Solution();
 
         int[][] testCases = {
             {7, 2, 3, 1, 2, 4, 3},       // Expected: 2

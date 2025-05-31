@@ -23,7 +23,6 @@ jobs:
         run: |
           BEFORE_COMMIT="${{ github.event.before }}"
 
-          # Handle empty, zero SHA or invalid commit
           if [ -z "$BEFORE_COMMIT" ] || [ "$BEFORE_COMMIT" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE_COMMIT"^{commit}; then
             echo "Invalid or empty BEFORE_COMMIT, using first commit as fallback"
             BEFORE_COMMIT=$(git rev-list --max-parents=0 HEAD)
@@ -86,13 +85,13 @@ jobs:
           fi
           
           echo "Executing Python script: $PYTHON_FILE"
-          PYTHONPATH=Solutions python Tests/test.py
+          PYTHONPATH=Solutions python3 Tests/test.py
 
       - name: Run Java Tests
         if: ${{ env.language == 'Java' }}
         run: |
-          if [ -f Tests/test.java ]; then
+          if [ -f Tests/Test.java ]; then
             javac -d . Solutions/*.java Tests/*.java && java Tests.Test
           else
-            echo "Java test file not found at Tests/test.java, skipping Java test."
+            echo "Java test file not found at Tests/Test.java, skipping Java test."
           fi
