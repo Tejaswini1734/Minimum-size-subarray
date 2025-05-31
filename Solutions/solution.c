@@ -1,5 +1,4 @@
 // solution.c
-
 #include <stdio.h>
 #include <limits.h>
 
