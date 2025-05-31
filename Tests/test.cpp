@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <vector>
-#include "Solution/solution.cpp"
+#include "Solutions/solution.cpp"
 
 #define ASSERT(test, expected) \
     if ((test) != (expected)) { \
