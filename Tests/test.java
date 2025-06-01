@@ -1,4 +1,6 @@
-public class Test {
+package Tests;
+
+public public class Test {
     public static void main(String[] args) {
        Solution solution = new Solution();
 
@@ -40,4 +42,7 @@ public class Test {
             System.out.println("\nSome test cases failed.");
         }
     }
+}
+ {
+    
 }
